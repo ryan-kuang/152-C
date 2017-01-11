@@ -1,0 +1,45 @@
+CMSC 15200 Winter 2016
+Lab 8 starter files
+
+This directory contains the following files:
+
+- Makefile
+
+- bucket.h, a specification of the linked list bucket data structure
+
+- htbl.h, a specification of the hash table data structure
+
+- bucket.c, implementation of buckets (currently stubbed out)
+
+- htbl.c, implementation of hash tables (currently stubbed out)
+
+- html-main.c, main program to read strings, insert in hash table,
+  display result
+
+- cnets2016, a file containing fictitious cnets
+
+- README, this file.
+
+========
+
+Your job is to complete bucket.c and hash.c, which are currently
+written only to display error messages and exit immediately. You do
+not need to provide additional evidence or tester files.
+
+========
+
+The expected usage of this program is as follows:
+
+$ ./htbl <cnets2016
+
+(You could direct any text file to htbl, not just cnets2016.)
+
+The main program supports the -b and -s options, for "bad hash" and
+"size" (i.e., number of buckets) respectively. These options can
+appear, if they appear at all, in either order. Here are some
+examples:
+
+$ ./htbl -s 99 <cnets2016
+$ ./htbl -b <cnets2016
+$ ./htbl -b -s 200 <cnets2016
+$ ./htbl -s 200 -b <cnets2016
